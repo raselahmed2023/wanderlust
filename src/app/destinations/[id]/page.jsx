@@ -1,4 +1,7 @@
 
+
+
+import { DeleteCard } from "@/components/DeleteCard";
 import { EditModal } from "@/components/EditModal";
 import Image from "next/image";
 import { BiEdit } from "react-icons/bi";
@@ -17,7 +20,10 @@ const DestinationDetailsPage = async ({ params }) => {
     return (
         <div className="max-w-7xl mx-auto">
 
-            <EditModal destination={destination}></EditModal>
+            <div className="flex justify-end gap-3 items-center mb-3">
+                <EditModal destination={destination}></EditModal>
+                <DeleteCard destination={destination}></DeleteCard>
+            </div>
 
             <Image
                 className="w-full h-100 object-cover"
