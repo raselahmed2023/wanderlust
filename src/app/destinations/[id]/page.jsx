@@ -1,10 +1,6 @@
-
-
-
 import { DeleteCard } from "@/components/DeleteCard";
 import { EditModal } from "@/components/EditModal";
 import Image from "next/image";
-import { BiEdit } from "react-icons/bi";
 import { FaRegCalendar } from "react-icons/fa6";
 import { LuMapPin } from "react-icons/lu";
 
@@ -53,12 +49,7 @@ const DestinationDetailsPage = async ({ params }) => {
 
                     <p>{description}</p>
                 </div>
-
-
-
             </div>
-
-
         </div>
     );
 };
